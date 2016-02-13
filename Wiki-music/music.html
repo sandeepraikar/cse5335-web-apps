@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Student Name: Sandeep Raikar  -->
+<!-- UTA ID: 1001103332 -->
+<!-- http://omega.uta.edu/~snr3332/project1/music.html -->
+<html lang="en">
+
+<head>
+    <title>A Music Web Application</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="music.js"></script>
+</head>
+
+<body onload="initialize();">
+    <form>
+        <h1 align="center" style="color:orange">Programming Assignment - 1 | A Music Web Application  </h1>
+        <label>Artist name<em style="color:red;">*</em> 
+            <input type="text" id="form-input" />
+        </label>
+        <input type="button" onclick="sendRequest();" value="Get Artist Info" />
+    </form>
+    </br>
+    <div id="artistInfo">
+        <table id="artistDetailedInfo" width="700" border=1 align="center">
+            <caption>
+                <h2>Artist Info<h2></caption>
+<tbody>
+    <tr>
+      <th align="left">Name</th>
+      <td id="artistName"></td>
+    </tr>
+    <tr>
+      <th align="left">Artist Profile Pic</th>
+      <td><img id="artistImage" alt="ArtistImage"></td>
+    </tr>
+        <tr>
+      <th align="left">Artist URL</th>
+      <td><a id="artistURL" target="_blank"><span id="spanURLLink"></span></a></td>
+    </tr>
+        <tr>
+      <th align="left">Tags</th>
+      <td id="artistTags"></td>
+    </tr>
+        <tr>
+      <th align="left">Bio Link</th>
+      <td><a id="artistBioLink" target="_blank"><span id="spanBioLink"></span></a></td>
+    </tr>
+        <tr>
+      <th align="left">Bio Summary</th>
+      <td> <div id="artistBioSummary"> </div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<br>
+<div id="artistTopAlbums"></div>
+<br>
+<div id="artistUpcomingEvents"></div>
+  </body>
+</html>
