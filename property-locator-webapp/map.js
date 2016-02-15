@@ -1,7 +1,7 @@
 // Name : Sandeep N Raikar
 // UTA ID : 1001103332 
 // Put your zillow.com API key here
-var zwsid = "X1-ZWz1dww26mecjv_a57uf";
+var zwsid = "your-zillow-id";
 
 var request = new XMLHttpRequest();
 
