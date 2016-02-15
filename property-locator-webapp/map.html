@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+    Student Name: Sandeep N Raikar
+    UTA ID : 1001103332
+    URL Address: http://omega.uta.edu/~snr3332/project2/map.html
+-->
+<html lang="en">
+  <head>
+    <title>Web Mashup: Display House Prices on a Map</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  </head>
+  <body onload="initialize();">
+    <form>
+       <h1 align="center" style="color:orange">Programming Assignment - 2 | Web Mashup </h1>
+       <label>House address <em style="color:red;">*</em> <input type="text" id="address"/></label>
+       <input type="button" onclick="getPropertyDetails();" value="Find"/>
+       <input type="button" onclick="flush();" value="Clear"/><br>
+	<P><strong>Click anywhere on the map to fetch the Property Details from Zillow, for sample Please click on any of the <em style="color:blue">BLUE </em>markers to fetch the details from Zillow webservice for the below shown 5 - Zillow Property Locations!</strong></P>
+    </form>
+    <br>
+    <div id="googleMapLayout" style="width:600px; height:500px"></div>
+    <br>
+    <div id="description"></div>
+  </body>
+</html>
+
